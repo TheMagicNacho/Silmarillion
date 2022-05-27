@@ -1,4 +1,4 @@
-name: Golang Formatter
+name: Static Analysis for All Commits
 on:
   push:
     branches:
@@ -11,12 +11,15 @@ jobs:
     - uses: actions/checkout@main
       with:
         fetch-depth: 0
+    - name: format code
+      run: |
+        gofmt -s ./...
     - name: tidy up
       run: |
         go mod tidy
     - name: lint the code
       run: |
-        go get -u github.com/golang/lint/golint
+        go get -u golang.org/x/lint/golint
         golint ./...
 
 
