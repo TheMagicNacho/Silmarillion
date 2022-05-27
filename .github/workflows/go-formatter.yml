@@ -8,10 +8,19 @@ jobs:
     name: Golang Formatter
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
       with:
         fetch-depth: 0
+    - name: tidy
+      run: |
+        go mod tidy
     - name: Golang Formatter
       uses: sladyn98/auto-go-format@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Lint
+      run: |
+        go get -u github.com/golang/lint/golint
+        golint ./...
+
+
