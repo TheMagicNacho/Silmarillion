@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0
     - name: format code
       run: |
-        gofmt -s ./...
+        gofmt -s .
     - name: tidy up
       run: |
         go mod tidy
