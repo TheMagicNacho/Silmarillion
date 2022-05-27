@@ -19,7 +19,7 @@ jobs:
         go mod tidy
     - name: lint the code
       run: |
-        go get -u golang.org/x/lint/golint
+        go install -u golang.org/x/lint/golint
         golint ./...
 
 
