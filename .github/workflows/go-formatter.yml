@@ -18,9 +18,8 @@ jobs:
       run: |
         go mod tidy
     - name: lint the code
-      run: |
-        go get golang.org/x/lint/golint
-        go install golang.org/x/lint/golint
-        golint ./...
+      uses: Jerome1337/golint-action@v1.0.2
+      with:
+        golint-path: '.'
 
 
