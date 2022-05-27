@@ -1,3 +1,3 @@
-module github.com/TheMagicNacho/Silmarillion
+module github.com/themagicnacho/silmarillion
 
 go 1.17
