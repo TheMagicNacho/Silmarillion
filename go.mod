@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/gin-gonic/contrib v0.0.0-20201101042839-6a891bf89f19
 	github.com/gin-gonic/gin v1.7.7
-	rsc.io/quote v1.5.2
 )
 
 require (
@@ -25,5 +24,4 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	rsc.io/sampler v1.3.0 // indirect
 )

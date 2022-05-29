@@ -27,14 +27,14 @@ func main() {
 
 	// ERROR HANDLERS
 	// load ascii art for when the server starts
-	content, _ := ioutil.ReadFile("motd.txt")
+	content, _ := ioutil.ReadFile("../motd.txt")
 	fmt.Println(string(content))
 
 	api := router.Group("/api")
 	{
 		api.GET("/ping", func(c *gin.Context) {
 			c.JSON(200, gin.H{
-				"message": "pong",
+				"message": "pong new thing",
 			})
 		})
 	}
@@ -49,12 +49,12 @@ func main() {
 		if strings.HasPrefix(path, "/api") {
 			c.JSON(404, gin.H{"message": "Page Not Found"})
 		} else {
-			c.JSON(404, gin.H{"message": "Use API"})
+			c.JSON(404, gin.H{"message": string(content)})
 			fmt.Println("Unauthorized root request")
 		}
 	})
 
-	fmt.Printf("Shepherd server is running...\n")
+	fmt.Printf("Server is running...\n")
 	if err := router.Run(":8000"); err != nil {
 		fmt.Println(fmt.Errorf("an error has occurred in the router: %s", err))
 		return
