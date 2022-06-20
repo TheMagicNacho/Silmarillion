@@ -34,7 +34,7 @@ func main() {
 	{
 		api.GET("/ping", func(c *gin.Context) {
 			c.JSON(200, gin.H{
-				"message": "pong new thing",
+				"message": "pong improved",
 			})
 		})
 	}

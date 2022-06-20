@@ -55,7 +55,7 @@ resource "docker_container" "silmarillion-nginx" {
 
 # deploys the silmarillion-server. Assumes that you have built a docker image locally.
 resource "docker_image" "silmarillion-server" {
-  name         = "silmarillion-server:latest" 
+  name         = "air-container:latest"
   keep_locally = true
 }
 
@@ -67,6 +67,13 @@ resource "docker_container" "silmarillion-server" {
     internal = 8000
     external = 8000
   }
+  env = ["POSTGRES_USER=dev", "POSTGRES_PASSWORD=dev", "POSTGRES_DB=internal"]
+  volumes {
+    host_path      = "/home/themagicnacho/Silmarillion/"
+    container_path = "/code"
+    # from_container = "/code"
+  }
+
   networks_advanced {
     name = "silmarillion-network"
   }
@@ -95,8 +102,8 @@ provider "postgresql" {
 }
 
 resource "postgresql_database" "silmarillion" {
-  name = "silmarillion"
-    owner             = "dev"
+  name              = "silmarillion"
+  owner             = "dev"
   connection_limit  = 100
   allow_connections = true
   depends_on = [

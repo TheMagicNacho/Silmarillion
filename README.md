@@ -25,7 +25,7 @@ A graph based state machine for managing game theory projects.
 ## Quickstart
 Silmarillion repo will build a container for you to develop and deploy with. We use teraform to build the local development network.
 
-1. To build the entire network, run the following command: `make up-dev` NOTE: sometimes you have to run this twice.
+1. To build the entire application with a daemon that watches for changes to your go code use: `make up-dev` NOTE: sometimes you have to run this twice.
 
 2. To build just the silmarillion container, run the following command: `make container-run`
 
