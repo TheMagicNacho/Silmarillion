@@ -1,2 +1,14 @@
+# Local build of the binaries
 /bin
+#  environment variables are irgnored by default
 .env
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# tf lockfile
+.terraform.lock.hcl

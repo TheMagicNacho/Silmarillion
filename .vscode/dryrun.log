@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/themagicnacho/Silmarillion'
+cd server && go mod tidy
+make: Leaving directory '/home/themagicnacho/Silmarillion'
+ 
