@@ -26,7 +26,6 @@ func main() {
 	// staticly server the client UI webpack files
 	router.Use(static.Serve("/", static.LocalFile("../client/build", true)))
 
-	// ERROR HANDLERS
 	// load ascii art for when the server starts
 	content, _ := ioutil.ReadFile("../motd.txt")
 	fmt.Println(string(content))
@@ -40,6 +39,7 @@ func main() {
 		})
 	}
 
+	// ERROR HANDLERS
 	err := router.SetTrustedProxies(nil)
 	if err != nil {
 		fmt.Println(fmt.Println(("ERROR: Could Not Establish Trusted Proxies: " + err.Error())))

@@ -59,5 +59,24 @@ We are .gitignore-ing the following files/directories
     - You will need to write your own version of this file and it MUST look like this:
 ```bash
 SERVER_PORT=8000
-```        
-        
+```
+
+# 🛂 Contributing
+## Want to help? We are always looking for new contributors!
+- Fork the source repo.
+- Visit the [GitHub project page](https://github.com/users/TheMagicNacho/projects/2/views/1)
+- Here we have features that need to be completed. Assign your self to any of the features in the "ready" column.
+- Make a new branch using `git checkout -b <feature-name>`
+- Commit your changes to the branch.
+- Rebase and squash your changes into the master branch.
+- Open a pull request.
+- We'll review your pull request and if it's accepted, we'll merge your branch into the master branch.
+
+## Have an issue?
+- Search the [GitHub Issues page](https://github.com/TheMagicNacho/Silmarillion/issues) to see if anyone has already reported the same problem you are having.
+- If you have not found a solution, please create a new issue using the [bug template](https://github.com/TheMagicNacho/Silmarillion/issues/new?assignees=&labels=&template=bug_report.md&title=).
+- If you have a new idea that has not been implemented yet, please create a new issue using the [feature template](https://github.com/TheMagicNacho/Silmarillion/issues/new?assignees=&labels=&template=feature_request.md&title=).
+
+## Code of Conduct
+We are a community of engineers, storytellers, and designers; we value everyone's participation and we strive to make our codebase a welcoming environment for all.
+That's why we adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) to ensure a harassment-free experience in the community. 
