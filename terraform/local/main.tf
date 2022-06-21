@@ -90,7 +90,6 @@ resource "docker_network" "private_network" {
 
 
 ## Creates the database 
-## Commented out by using the environment variables shortcut found in the SQL module above
 provider "postgresql" {
   host            = "localhost"
   port            = 5432

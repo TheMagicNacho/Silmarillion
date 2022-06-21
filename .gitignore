@@ -1,6 +1,6 @@
 # Local build of the binaries
 /bin
-#  environment variables are irgnored by default
+#  environment variables are ignored by default
 .env
 
 # Local .terraform directories

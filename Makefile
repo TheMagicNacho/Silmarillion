@@ -25,7 +25,7 @@ container-run: image #Runs the server container with docker. Does not attach a d
 
 up-dev: #Takes the most recent image and runs through terraform.
 	@echo "Did you build the most recent image?"
-	@cd terraform/local && terraform init && terraform apply -auto-approve
+	@cd terraform/local && terraform init && terraform apply -auto-approve 
 
 down-dev:
 	@cd terraform/local && terraform destroy -auto-approve
