@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 11:09:15 2022
+# Make data base, printed on Wed Jun 22 21:25:04 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -37,9 +37,9 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/themagicnacho/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/node
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+_ = /home/themagicnacho/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+# makefile (from '.env', line 1)
+MAKEFILE_LIST :=  Makefile .env
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -55,7 +55,7 @@ GOPROXY = https://proxy.golang.org,direct
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/themagicnacho/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/themagicnacho/.nvm/versions/node/v18.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/TheMagicNacho/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/dotnet-core-uninstall/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/TheMagicNacho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/TheMagicNacho/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/TheMagicNacho/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/TheMagicNacho/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/TheMagicNacho/.dotnet/tools:/mnt/c/Users/TheMagicNacho/AppData/Local/Programs/oh-my-posh/bin:/snap/bin:/usr/local/go/bin
+PATH = /home/themagicnacho/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/themagicnacho/.nvm/versions/node/v18.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/TheMagicNacho/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/dotnet-core-uninstall/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/TheMagicNacho/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/TheMagicNacho/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/TheMagicNacho/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/TheMagicNacho/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/TheMagicNacho/.dotnet/tools:/mnt/c/Users/TheMagicNacho/AppData/Local/Programs/oh-my-posh/bin:/snap/bin:/usr/local/go/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
@@ -65,7 +65,9 @@ NVM_BIN = /home/themagicnacho/.nvm/versions/node/v18.2.0/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-89c0d022-b349-45fd-a986-24f5065fcb73.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-3bb760f7-48fa-4533-bd3a-6c39c9e86526.sock
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/THEMAG~1/AppData/Local/Temp/vscode-remote-wsl/30d9c6cd9483b2cc586687151bcbcd635f373630/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # automatic
@@ -79,7 +81,7 @@ PWD = /home/themagicnacho/Silmarillion
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/890_interop
+WSL_INTEROP = /run/WSL/16696_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -91,7 +93,7 @@ POWERLINE_COMMAND = oh-my-posh
 # environment
 LOGNAME = themagicnacho
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 CONDA_PROMPT_MODIFIER = false
 # environment
@@ -115,7 +117,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = themagicnacho
 # makefile
-.DEFAULT_GOAL := server-dep
+.DEFAULT_GOAL := dep
 # environment
 NAME = Windows
 # automatic
@@ -128,6 +130,8 @@ MAKE_COMMAND := make
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
+# makefile (from '.env', line 1)
+SERVER_PORT = 8000
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -142,6 +146,8 @@ NVM_DIR = /home/themagicnacho/.nvm
 +F = $(notdir $+)
 # environment
 VSCODE_HANDLES_SIGPIPE = true
+# 'override' directive
+.SHELLSTATUS := 0
 # default
 MAKEFILES := 
 # automatic
@@ -169,7 +175,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
 # variable set hash-table stats:
-# Load=78/1024=8%, Rehash=0, Collisions=5/103=5%
+# Load=81/1024=8%, Rehash=0, Collisions=5/112=4%
 
 # Pattern-specific Variable Values
 
@@ -177,22 +183,15 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2080, inode 1540262): 16 files, no impossibilities.
+# . (device 2080, inode 1540262): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
-
-server-run: server-img
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	@docker run -d -p 8000:8000 --rm silmarillion-server
 
 # Not a target:
 all:
@@ -201,26 +200,55 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-server-dep:
+image-silmarillion: binaries
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	@cd server && go mod tidy
+#  recipe to execute (from 'Makefile', line 12):
+	@cd docker/silmarillion && docker build -t silmarillion-server:latest .
+
+container-run: image
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	@docker run -d -p ${SERVER_PORT}:${SERVER_PORT}  --rm silmarillion-server
+
+down-dev:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 31):
+	@cd terraform/local && terraform destroy -auto-approve
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-28 21:56:00.699925949
+#  Last modified 2022-06-20 16:42:22.435709263
 #  File has been updated.
 #  Successfully updated.
 
-server-img: server-build
+dep:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	@docker build -t silmarillion-server .
+#  recipe to execute (from 'Makefile', line 6):
+	@cd server && go mod tidy
+
+up-dev:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	@echo "Did you build the most recent image?"
+	@cd terraform/local && terraform init && terraform apply -auto-approve 
+
+# Not a target:
+.env:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-27 22:49:58.55561473
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -228,27 +256,48 @@ server-img: server-build
 #  Modification time never checked.
 #  File has not been updated.
 
-server-build: server-dep
+# Not a target:
+image:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
+
+image-air:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	@cd docker/air && docker build -t air-container:latest .
+
+binaries: dep
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
 	@cd server && go build -o ../bin/silmarillion-server
 
+logs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 15):
+	@docker logs -f silmarillion-server
+
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/28=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 215 B / avg = 8 B
-# current buf: size = 8162 B / used = 215 B / count = 25 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 258 B / avg = 8 B
+# current buf: size = 8162 B / used = 258 B / count = 31 / avg = 8 B
 
-# strcache performance: lookups = 36 / hit rate = 30%
+# strcache performance: lookups = 47 / hit rate = 34%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=1/36=3%
-# Finished Make data base on Mon Jun 20 11:09:15 2022
+# Load=31/8192=0%, Rehash=0, Collisions=3/47=6%
+# Finished Make data base on Wed Jun 22 21:25:05 2022
 
  
